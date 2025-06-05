@@ -9,7 +9,7 @@ export default function Colores(){
     // carga inicial de los datos
     //useEffect es como hacer la conexión inicial a la db para traer los colores a react
     useEffect( () => { 
-        fetch("https://colores-react-uytr.onrender.com/colores")
+        fetch("https://api-colors-mongo.onrender.com/colores")
         .then(respuesta => respuesta.json())
         .then( colores => setColores(colores) )
     }, [])

@@ -29,7 +29,7 @@ export default function Formulario({crearColor}){
             if(valido){
                 const [r,g,b] = valores
                 
-                return fetch("https://colores-react-uytr.onrender.com/colores/nuevo", {
+                return fetch("https://api-colors-mongo.onrender.com/colores/nuevo", {
                     method : "POST",
                     body : JSON.stringify({r,g,b}),
                     headers : {
